@@ -1,31 +1,37 @@
- h1 {color: #D800A6;
+
+ @import url(https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,500,700,900);
+ @import url(https://use.fontawesome.com/releases/v6.1.2/css/all.css);
+
+ h1 {color:  #5CB8E4;
   font-size: 32px;
   font-weight: 900;}
   h2 {
     font-family: 'Roboto', sans-serif;
-    color: #D800A6;
+    color:  #5CB8E4;
     font-size: 20px;
     font-weight: lighter;
     font-weight: 500;
 }
 
   body
-  {background: #D2DAFF;
-    color: #400D51;
+  {background: #8758FF;
+    color: #5CB8E4;
     font-family: 'Lora', serif;
     font-size: 27px;
     font-weight: lighter;}
 
+
 a {font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color: #400D51;
+    color: #5CB8E4;
     font-weight: 600;
     font-size: 27px;
+
   }
 
   a:hover {
     text-decoration: none;
-    color: #F57328;}
+    color: #D2001A}
 
   li {
     text-align: -webkit-match-parent;
@@ -39,6 +45,10 @@ a {font-family: 'Roboto', sans-serif;
     list-style: none;
     padding-left: 0px;}
 
+    .list-inline i {
+      font-size: 60px;
+    }
+
   ul {
     display: block;
     list-style-type: disc;
@@ -50,7 +60,7 @@ a {font-family: 'Roboto', sans-serif;
 }
 
   .card-white {
-    background-color: #B1B2FF;
+    background-color: #181818;
     padding: 40px;
     box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
     border-radius: 4px;
@@ -67,17 +77,18 @@ a {font-family: 'Roboto', sans-serif;
   }
 
 .btn-blue {
-  background-color: #6B72E1;
+  background-color: #5CB8E4;
   color: white;
-  padding: 15px 20px;
-  border-radius: 4px;}
+  padding: 10px 15px;
+  border-radius: 7px;}
 
   .img-circle {
     border-radius: 50%;
     image-resolution: 1000px;
-    width: 250px
+    width: 200px
 
 }
+
 
 .list-inline li {
   display: inline;
@@ -91,7 +102,7 @@ li {
 
 .list-inline li {
     display: inline;
-    padding: 10px;
+    padding: 20px;
 }
 
 li {
@@ -104,3 +115,28 @@ li {
     padding-left: 0px;
 }
 #banner {background-image: url("https://unsplash.com/photos/NNUVE31Pqog?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink/1000/600");}
+
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
